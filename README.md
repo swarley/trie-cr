@@ -1,21 +1,16 @@
 # trie-cr
 
-TODO: Write a description here
+A crystal based implementation of a trie data structure.
 
 ## Installation
 
 Add this to your application's `shard.yml`:
 
-```yaml
-dependencies:
-  trie-cr:
-    github: [your-github-name]/trie-cr
-```
 
 ## Usage
 
 ```crystal
-require "trie-cr"
+require "trie"
 ```
 
 TODO: Write usage instructions here
@@ -34,4 +29,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Matt - creator, maintainer
+- [swarley](https://github.com/swarley) Matt - creator, maintainer
