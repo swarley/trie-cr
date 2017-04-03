@@ -13,7 +13,10 @@ Add this to your application's `shard.yml`:
 require "trie"
 ```
 
-TODO: Write usage instructions here
+```crystal
+trie = Trie(String).new
+trie.insert
+```
 
 ## Development
 

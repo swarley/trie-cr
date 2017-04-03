@@ -7,20 +7,26 @@ class Trie(T)
   def insert(str : String, data : T)
     if str.empty?
       @data = data
+      return self
     else
       @children[str[0]] = Trie(T).new unless @children.has_key? str[0]
-      @children[str[0]].insert(str[1..-1], data)
+      return @children[str[0]].insert(str[1..-1], data)
     end
-    return nil
   end
 
   def get(str : String)
-    return @data if str.empty?
+    if str.empty?
+      if @data.nil?
+        raise "Valueless node"
+      else
+        return @data
+      end
+    end
 
     if @children.has_key? str[0]
       return @children[str[0]].get(str[1..-1])
     else
-      raise Exception.new("Non-existant key")
+      raise "Non-existant key"
     end
   end
 end
