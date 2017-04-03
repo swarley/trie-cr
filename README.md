@@ -28,7 +28,7 @@ trie.get("bar")
 ## Contributing
 
 Please, please, please send me feedback or feature requests. Trying to get into crystal and I'm happy to hear what could be done better.
-1. Fork it ( https://github.com/[your-github-name]/trie-cr/fork )
+1. Fork it ( https://github.com/swarley/trie-cr/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
