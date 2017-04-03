@@ -1,2 +1,2 @@
 require "spec"
-require "../src/trie-cr"
+require "../src/trie"
