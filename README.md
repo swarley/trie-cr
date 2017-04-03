@@ -15,15 +15,19 @@ require "trie"
 
 ```crystal
 trie = Trie(String).new
-trie.insert
+# => #<Trie(String):0x18b0d80 @children={}, @data=nil>
+trie.insert("foo")
+# => #<Trie(String):0x1127d20 @children={}, @data="bar">
+trie.get("foo")
+# => "bar"
+trie.get("bar")
+# Error
+
 ```
-
-## Development
-
-TODO: Write development instructions here
 
 ## Contributing
 
+Please, please, please send me feedback or feature requests. Trying to get into crystal and I'm happy to hear what could be done better.
 1. Fork it ( https://github.com/[your-github-name]/trie-cr/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
